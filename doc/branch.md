@@ -67,3 +67,43 @@ git branch
 
 ***
 
+***
+
+## 分支的合并等等
+
+
+ 新建本地分支
+ ```shell
+ git branch dev-xxx
+ 
+ ```
+
+ 切换到新建分支
+ ```shell
+
+ git checkout dev-xxx
+ ```
+
+ 新建分支并切换到新分支上
+ 
+ ```shell
+
+ git checkout -b dev-xxx
+ ```
+
+
+推送某个分支:
+
+```shell
+
+git push origin dex-xxx
+
+```
+
+如何切换到某个分支:
+
+git checkout dev-xxx
+git chekcout master
+
+
+
