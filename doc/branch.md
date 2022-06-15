@@ -107,3 +107,53 @@ git chekcout master
 
 
 
+***
+
+多个仓库下 某个分支的处理:
+比如 这个地方 想要拉起 某个仓库下的某个分支:
+
+```shell
+ git branch -a                                          
+* main
+  remotes/comorigin/main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+```
+
+本地并没有显示出 远程的所有分支:
+
+现在同步一下:
+```shell
+
+git remote -v
+comorigin       http://192.168.125.151:3000/penglonghua/cloudcms-new.git (fetch)
+comorigin       http://192.168.125.151:3000/penglonghua/cloudcms-new.git (push)
+origin  https://github.com/penglonghua/cloudcms-new.git (fetch)
+origin  https://github.com/penglonghua/cloudcms-new.git (push)
+
+同步一下 远程的某个分支
+git fetch comorigin
+
+同步后
+ git branch -a      
+* main
+  remotes/comorigin/liubo/202206
+  remotes/comorigin/main
+  remotes/comorigin/yueluo-dev
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+
+
+```
+
+现在就可以 检出某个分支了:
+```shell
+git checkout -b yueluo-dev remotes/comorigin/yueluo-dev
+```
+
+
+
+***
+
