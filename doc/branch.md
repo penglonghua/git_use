@@ -157,3 +157,63 @@ git checkout -b yueluo-dev remotes/comorigin/yueluo-dev
 
 ***
 
+
+> https://www.jianshu.com/p/4b95058088c2
+
+1. 查询本地分支
+```shell
+git brance
+```
+
+2. 查看远程分支
+```shell
+git branch -r
+```
+
+3. 查看所有分支
+```shell
+git branch -a
+```
+
+4. 本地创建新的分支
+```shell
+git branch [branch name]
+```
+
+5. 切换到新的分支
+```shell
+git checkout [branch name]
+```
+
+6. 创建+切换分支
+```shell
+git checkout -b [branch name]
+```
+
+7. 将新分支推送到github
+```shell
+git push origin [branch name]
+```
+
+8. 删除本地分支
+```shell
+git branch -d [branch name]
+```
+
+9. 删除github 远程分支
+```shell
+git push origin :[branch name]
+```
+
+`分支名前的冒号代表删除。`
+
+
+
+
+
+
+
+
+
+
+
